@@ -1,0 +1,32 @@
+.divForms{
+    height: 100vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    margin-left: -8%;
+}
+
+.fundoForm{
+    padding: 20px;
+    width: 70vh;
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.24);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.1px);
+-webkit-backdrop-filter: blur(5.1px);
+border: 1px solid rgba(255, 255, 255, 0.23);
+}
+
+body{
+    background-image: url(https://images.pexels.com/photos/1181352/pexels-photo-1181352.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: none;
+    background-size: 100%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
