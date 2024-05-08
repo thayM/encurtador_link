@@ -34,7 +34,10 @@ img{
     width: 544px;
     display: flex;
     flex-direction: column;
+    padding: 20px;
 }
+
+/* ver gap */
 
 .title{
     display: flex;
@@ -47,7 +50,7 @@ img{
 .campos{
     display: flex;
     flex-direction: column;
-    padding-bottom: 25px;
+    margin-bottom: 100px;
 }
 
 .inputs{

@@ -25,8 +25,7 @@
   <div class="campos">
     <label for="exampleInputEmail1" class="form-label titulosInputs">E-mail</label>
     <input type="email" class="inputs" id="exampleInputEmail1" aria-describedby="emailHelp">
-  </div>
-  <div class="campos">
+  
     <label for="exampleInputPassword1" class="form-label titulosInputs">Senha</label>
     <input type="password" class="inputs" id="exampleInputPassword1">
   </div>
