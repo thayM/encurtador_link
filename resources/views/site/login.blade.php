@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="{{ asset('css/login.css') }}">
 </head>
 <body>
-   
+
+
 <div class="conteudo">
 
 <div class="img">
@@ -16,7 +17,9 @@
 </div>
 
 <div class="divForms">
-<h1 class="title">Login</h1>
+  <div class="title">
+  <h1>Login</h1>
+  </div>
 
 <form class="formulario">
   <div class="campos">
@@ -46,6 +49,9 @@
 
 
 </div>
+
+
+
 
 
 
