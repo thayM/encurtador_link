@@ -12,7 +12,11 @@
 
 
 
+
 <div class="divForms">
+<div class="divImg">
+  <img src="{{ asset('img/undraw_fingerprint_login_re_t71l.svg') }}" alt="">
+</div>
 <div class="fundoForm">
 <form class="col-12">
   <div class="mb-3 col-12">

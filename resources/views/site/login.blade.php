@@ -8,19 +8,46 @@
     <link rel="stylesheet" href="{{ asset('css/login.css') }}">
 </head>
 <body>
-    
-<form>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">E-mail</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+   
+<div class="conteudo">
+
+<div class="img">
+  <img src="{{asset('img/login.svg')}}" alt="">
+</div>
+
+<div class="divForms">
+<h1 class="title">Login</h1>
+
+<form class="formulario">
+  <div class="campos">
+    <label for="exampleInputEmail1" class="form-label titulosInputs">E-mail</label>
+    <input type="email" class="inputs" id="exampleInputEmail1" aria-describedby="emailHelp">
   </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Senha</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
+  <div class="campos">
+    <label for="exampleInputPassword1" class="form-label titulosInputs">Senha</label>
+    <input type="password" class="inputs" id="exampleInputPassword1">
   </div>
-<p>Registrar-se</p>
+
+  <div class="btnMsg">
+  
+
+  <div class="divMsg">
+  <p>Registrar-se</p>
+  </div>
+  <div class="divBtn">
   <button type="submit" class="btn btn-primary">Acessar</button>
+
+  </div>
+
+  </div>
+
 </form>
+</div>
+
+
+</div>
+
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
