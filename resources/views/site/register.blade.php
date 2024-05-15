@@ -10,13 +10,13 @@
 <body>
     
 
-
-
-
-<div class="divForms">
+<div class="container">
 <div class="divImg">
   <img src="{{ asset('img/undraw_fingerprint_login_re_t71l.svg') }}" alt="">
 </div>
+
+
+<div class="divForms">
 <div class="fundoForm">
 <form class="col-12">
   <div class="mb-3 col-12">
@@ -36,6 +36,11 @@
 </form>
 </div>
 </div>
+</div>
+
+
+
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

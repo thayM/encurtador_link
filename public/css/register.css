@@ -1,4 +1,4 @@
-.divForms{
+/* .divForms{
     height: 100vh;
     display: flex;
     justify-content: end;
@@ -9,9 +9,9 @@
 
 .fundoForm{
     padding: 20px;
-    width: 70vh;
+    width: 70vh; */
 /* From https://css.glass */
-background: rgba(41, 167, 217, 0.53);
+/* background: rgba(41, 167, 217, 0.53);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(7.3px);
@@ -21,12 +21,12 @@ border: 1px solid rgba(41, 167, 217, 0.3);
 
 body{
 background-color: #0D0D0D;
-} 
+}  */
 
 /* .divImg{
     margin-top: 100px;
 } */
-
+/* 
 form{
     display: flex;
     flex-direction: column;
@@ -36,4 +36,19 @@ form{
 .btnRegister{
     background-color: #458C57;
     color: #fff;
+} */
+
+body{
+    background-color: #1B1B1B;
 }
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+/* .fundoForm{
+
+} */

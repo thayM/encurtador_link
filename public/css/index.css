@@ -42,3 +42,14 @@ body{
 .menu li a:hover{
     color: #082255;
 }
+
+.formContato{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 500px;
+}
+
+.btnEnviar{
+    width: 50px;
+}

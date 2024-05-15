@@ -10,17 +10,16 @@
 <body>
     
 <nav class="menu">
-    <ul>
-        <li><a href="{{ route('site.login') }}">Login</a></li>
-        <li><a href="{{ route('site.register') }}">Registrar-se</a></li>
-    </ul>
+    @component('layouts._menu.menuIndex')
+    @endcomponent
 </nav>
 
 
 <div class="container">
 <img class="imgWelcome" src="{{ asset('img/welcome_cats.svg') }}" alt="">
 </div>
-
+    @component('layouts._forms.formContato', ['css' => 'formContato', 'classBtn' => 'btnEnviar'])
+    @endcomponent
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
