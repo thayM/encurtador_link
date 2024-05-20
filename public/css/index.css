@@ -53,3 +53,89 @@ body{
 .btnEnviar{
     width: 50px;
 }
+
+.container2{
+    background-image: linear-gradient( to bottom, #668CD9, #2651A6);
+    height: 940px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Inferior{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+h1{
+    font-size: 64px;
+    width: 80%;
+    color: #fff;
+}
+
+.imgContato{
+    height: 65vh;
+}
+
+.formulario{
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.28);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.8px);
+    -webkit-backdrop-filter: blur(4.8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    width: 532px;
+    height: 709px;
+}
+
+
+.formContato{
+    margin-top: 90px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulosInput{
+    color: #CEDAF2;
+    font-size: 32px;
+}
+
+.inputs{
+    border-radius: 15px;
+    border-color: transparent;
+    height: 50px;
+    width: 391px;
+}
+
+.campos{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-left: 70px;
+}
+
+.btnEnviar{
+    margin-top: 20px;
+    margin-left: 75%;
+    width: 181px;
+    background-color: #2651A6;
+    color: #7E9CD9;
+    height: 47px;
+    font-size: 24px;
+    border-color: transparent;
+    border-radius: 20px;
+}
+
+.select{
+    height: 50px;
+    width: 391px;
+    border-color: transparent;
+    border-radius: 15px;
+}
+
