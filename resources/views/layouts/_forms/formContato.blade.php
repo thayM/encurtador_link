@@ -14,7 +14,7 @@
 
     <div class="campos">
     <label class="{{ $cssLabel }}" for="">Mensagem</label>
-    <input class="{{ $cssInput }}" type="text" id="mensagem" name="mensagem">
+    <textarea class="{{ $cssInput }} {{ $cssCampoMensagem }}" type="text" id="mensagem" name="mensagem" row="3"></textarea>
     </div>
 
     <div class="campos">

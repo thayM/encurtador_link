@@ -1,23 +1,17 @@
-    @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
 
 *{
     font-family: 'Cabin';
 }
 
 body{
-    background-color: #1B1B1B;
-}
-
-.container{
-    height: 90vh;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+    background-image: linear-gradient( to bottom, #668CD9, #2651A6);
 }
 
 .menu{
     height: 75px;
-    background-color: #668CD9;
+    /* background-color: #668CD9; */
+    background-color: #1B1B1B;
 }
 
 .menu ul{
@@ -40,8 +34,9 @@ body{
 }
 
 .menu li a:hover{
-    color: #082255;
+    color: #ffffff;
 }
+
 
 .formContato{
     display: flex;
@@ -54,20 +49,14 @@ body{
     width: 50px;
 }
 
-.container2{
-    background-image: linear-gradient( to bottom, #668CD9, #2651A6);
-    height: 940px;
+.containerBody{
+    height: 92.1vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0 200px ;
 }
 
-.Inferior{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-}
 
 h1{
     font-size: 64px;
@@ -87,7 +76,6 @@ h1{
     backdrop-filter: blur(4.8px);
     -webkit-backdrop-filter: blur(4.8px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-
     width: 532px;
     height: 709px;
 }

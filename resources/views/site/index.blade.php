@@ -10,7 +10,7 @@
 <body>
     
 <nav class="menu">
-    @component('layouts._menu.menuIndex')
+    @component('layouts._menu.menuSite', ['menu' => $menu])
     @endcomponent
 </nav>
 
@@ -27,7 +27,7 @@
 </div>
 
 <div class="formulario">
-    @component('layouts._forms.formContato', ['css' => 'formContato', 'classBtn' => 'btnEnviar', 'cssLabel' => 'titulosInput', 'cssInput' => 'inputs', 'cssSelect' => 'select'])
+    @component('layouts._forms.formContato', ['css' => 'formContato', 'classBtn' => 'btnEnviar', 'cssLabel' => 'titulosInput', 'cssInput' => 'inputs', 'cssSelect' => 'select', 'cssCampoMensagem' => 'campoMsg'])
     @endcomponent
 </div>
 </div>

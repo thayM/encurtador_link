@@ -10,6 +10,12 @@
 <body>
     
 
+<nav class="menu">
+    @component('layouts._menu.menuSite', ['menu' => $menu])
+    @endcomponent
+</nav>
+
+
 <div class="container">
 <div class="divImg">
   <img src="{{ asset('img/undraw_fingerprint_login_re_t71l.svg') }}" alt="">
@@ -17,25 +23,30 @@
 
 
 <div class="divForms">
-<div class="fundoForm">
-<form class="col-12">
+  <div class="divTituloForms">
+<h1 class="tituloForms">Crie sua conta agora!</h1>
+</div>
+
+<form class="formulario col-12">
   <div class="mb-3 col-12">
-    <label for="exampleInputEmail1" class="form-label">Email</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <label for="exampleInputEmail1" class="labels form-label">Email</label>
+    <input type="email" class="form-control inputs" id="exampleInputEmail1" aria-describedby="emailHelp">
     
   </div>
   <div class="mb-3 col-12">
-    <label for="exampleInputPassword1" class="form-label">Senha</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
+    <label for="exampleInputPassword1" class="labels form-label">Senha</label>
+    <input type="password" class="form-control inputs" id="exampleInputPassword1">
   </div>
   <div class="mb-3 col-12">
-    <label for="exampleInputPassword1" class="form-label">Confirmar senha</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
+    <label for="exampleInputPassword1" class="labels form-label">Confirmar senha</label>
+    <input type="password" class="form-control inputs" id="exampleInputPassword1">
   </div>
+  <div class="divBtn">
   <button type="submit" class="btnRegister btn btn-primary">Registrar-se</button>
+  </div>
 </form>
 </div>
-</div>
+
 </div>
 
 

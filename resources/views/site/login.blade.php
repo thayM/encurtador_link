@@ -9,6 +9,11 @@
 </head>
 <body>
 
+<nav class="menu">
+    @component('layouts._menu.menuSite', ['menu' => $menu])
+    @endcomponent
+</nav>
+
 
 <div class="conteudo">
 
@@ -36,6 +41,7 @@
   </div>
 
   <div class="divMsg">
+    <a href="{{ route('site.recover') }}">Esqueceu a senha? Clique aqui.</a>
     <a href="{{ route('site.register') }}">Não é registrado? Clique aqui.</a>
   </div>
 

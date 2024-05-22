@@ -1,42 +1,28 @@
-/* .divForms{
-    height: 100vh;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    width: 100%;
-    margin-left: -8%;
-}
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
 
-.fundoForm{
-    padding: 20px;
-    width: 70vh; */
-/* From https://css.glass */
-/* background: rgba(41, 167, 217, 0.53);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(7.3px);
--webkit-backdrop-filter: blur(7.3px);
-border: 1px solid rgba(41, 167, 217, 0.3);
+*{
+    font-family: 'Cabin';
 }
 
 body{
-background-color: #0D0D0D;
-}  */
-
-/* .divImg{
-    margin-top: 100px;
-} */
-/* 
-form{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    background-color: #1B1B1B;
 }
-
 .btnRegister{
-    background-color: #458C57;
+    background-color: #668CD9;
     color: #fff;
-} */
+    width: 198px;
+    height: 53px;
+    border-color: transparent;
+    border-radius: 10px;
+    font-size: 24px;
+
+} 
+
+.divBtn{
+    justify-content: end;
+    display: flex;
+    width: 128%;
+}
 
 body{
     background-color: #1B1B1B;
@@ -46,9 +32,73 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
 }
 
-/* .fundoForm{
+.divForms{
+    background-image: linear-gradient( to bottom, #97B8FB, #3068DA);
+    width: 486px;
+    height: 606px;
+    border-color: transparent;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
-} */
+.divTituloForms{
+     margin-top: -40px;
+}
+
+.formulario{
+    width: 300px;
+    margin-top: 40px;
+    margin-right: 80px;
+}
+
+.inputs{
+    background-color: #BAD1FF;
+    width: 386px;
+    height: 46px;
+    border-color: transparent;
+    border-radius: 10px;
+}
+
+.labels{
+    font-size: 24px;
+    color: #1D3056;
+}
+
+.tituloForms{
+    font-size: 40px;
+    color: #CEDAF2;
+}
+
+.menu{
+    height: 75px;
+    background-color: #668CD9;
+}
+
+.menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.menu li{
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding: 13px 20px 0 20px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #CEDAF2;
+    font-size: 30px;
+}
+
+.menu li a:hover{
+    color: #082255;
+}

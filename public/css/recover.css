@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+    font-family: 'Cabin';
+}
+
+body{
+    background-color: #1B1B1B;
+}
+
+.menu{
+    height: 75px;
+    background-color: #668CD9;
+}
+
+.menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.menu li{
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding: 13px 20px 0 20px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #CEDAF2;
+    font-size: 30px;
+}
+
+.menu li a:hover{
+    color: #082255;
+}
+
+.containerBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formRecover{
+    background-image: linear-gradient( to bottom, #7E9CD9, #3259AA);
+    width: 788px;
+    height: 439px;
+    border-color: transparent;
+    border-radius: 20px;
+}
+
+input{
+    width: 608px;
+    height: 64px;
+    border-color: transparent;
+    border-radius: 10px;
+}
