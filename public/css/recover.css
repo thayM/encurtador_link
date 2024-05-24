@@ -40,6 +40,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 90vh;
 }
 
 .formRecover{
@@ -55,4 +56,56 @@ input{
     height: 64px;
     border-color: transparent;
     border-radius: 10px;
+}
+
+.inputEmail{
+    width: 710px;
+    height: 64px;
+    border-color: transparent;
+    border-radius: 10px;
+}
+
+.labelEmail{
+    font-size: 40px;
+}
+
+.tituloForm{
+    color: #CEDAF2;
+    font-size: 64px;
+}
+
+.divTitulo{
+    margin-bottom: 20px;
+}
+
+.formulario{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 439px;
+}
+
+.btnEmail{
+    width: 232px;
+    height: 59px;
+    font-size: 32px;
+    color: #CEDAF2;
+    background-color: #2651A6;
+    border-color: transparent;
+    border-radius: 10px;
+}
+
+.btnEmail:hover{
+    background-color: #668CD9;
+    color: #2651A6;
+    border-color: transparent;
+}
+
+.divBtn{
+    margin-top: 20px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    width: 90%;
 }
