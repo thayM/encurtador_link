@@ -12,13 +12,15 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('recuperar', function (Blueprint $table) {
-            $table->id()->autoIncrement()->primary();
-            $table->string('email', 150);
-            $table->string('codigo', 150);
-            $table->dateTime('tempo_limite');
-            $table->string('user_hash', 255);
+            $table->id();
+            $table->unsignedBigInteger('id_recuperar');
+            $table->string('email', 150)->nullable();
+            $table->string('codigo', 150)->nullable();
+            $table->dateTime('tempo_limite')->nullable();
+            $table->string('user_hash', 255)->nullable();
 
             $table->foreign('user_hash')->references('hash')->on('usuario');
+            $table->foreign('user_hash')->references('id_user')->on('usuario');
             $table->timestamps();
         });
     }
