@@ -1,5 +1,5 @@
 {{ $slot }}
-<form action="#" method="POST" class="{{ $css }}">
+<form action="{{ route('site.contato') }}" method="POST" class="{{ $css }}">
     @csrf
 
     <div class="campos">

@@ -22,6 +22,8 @@ Route::get('/login', [App\Http\Controllers\AccountController::class, 'login'])->
 Route::get('/logout', [App\Http\Controllers\AccountController::class, 'logout'])->name('site.logout');
 
 Route::get('/contato', [App\Http\Controllers\ContatoController::class, 'contato'])->name('site.contato');
+Route::post('/contato', [App\Http\Controllers\ContatoController::class, 'salvar'])->name('site.contato');
+
 
 Route::prefix('/app')->group(function(){
     Route::get('/generate', [App\Http\Controllers\LinkController::class, 'generate'])->name('app.generate');

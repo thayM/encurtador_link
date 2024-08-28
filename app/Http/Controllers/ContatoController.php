@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use \App\Models\Contato;
 
 class ContatoController extends Controller
 {
@@ -13,5 +14,24 @@ class ContatoController extends Controller
             ['href' => 'site.register', 'descricao' => 'Registra-se']
         ];
         return view('site.contato', compact('menu'));
+    }
+
+    public function salvar(Request $request){
+
+$request->validate([
+    'nome' => 'required|min:3|max:50',
+    'email' => 'email',
+    'motivo' => 'required',
+    'mensagem' => 'required|max:200'
+]);
+
+        $contato = new Contato();
+        $contato->email = $request->input('email');
+        $contato->nome = $request->input('nome');
+        $contato->mensagem = $request->input('mensagem');
+        $contato->motivo = $request->input('motivo');
+        $contato->save();
+        // $contato->create($request->all());
+        return redirect()->route('site.contato');
     }
 }
