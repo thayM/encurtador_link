@@ -12,8 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('contato', function (Blueprint $table) {
-            // $table->id();
-            $table->unsignedBigInteger('id_contato');
+            $table->id('id_contato');
             $table->string('email', 150)->nullable();
             $table->string('nome', 50)->nullable();
             $table->text('mensagem')->nullable();

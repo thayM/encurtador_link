@@ -12,16 +12,17 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('link', function (Blueprint $table) {
-            // $table->id();
-            $table->unsignedBigInteger('id_link');
-            $table->varchar('path', 255)->nullable();
-            $table->varchar('url', 255)->nullable();
-            $table->dateTime('tempo_limite')->nullable();
-            $table->string('user_hash', 255)->nullable();
-
-            // $table->foreign('user_hash')->references('hash')->on('usuario');
-            // $table->foreign('user_hash')->references('id_user')->on('usuario');
+            $table->id('id_link');
+            $table->string('path', 255);
+            $table->string('url', 255);
+            $table->dateTime('tempo_limite');
+            $table->unsignedBigInteger('id_user');
+            $table->string('user_hash', 255);
             $table->timestamps();
+        });
+
+        Schema::table('link', function (Blueprint $table) {
+            $table->foreign(['id_user', 'user_hash'])->references(['id_user', 'hash'])->on('usuario');
         });
     }
 
@@ -33,3 +34,4 @@ return new class extends Migration
         Schema::dropIfExists('link');
     }
 };
+

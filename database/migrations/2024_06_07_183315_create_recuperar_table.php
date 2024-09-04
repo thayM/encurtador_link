@@ -12,16 +12,19 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('recuperar', function (Blueprint $table) {
-            // $table->id();
-            $table->unsignedBigInteger('id_recuperar');
+            $table->id('id_recuperar');
             $table->string('email', 150)->nullable();
             $table->string('codigo', 150)->nullable();
             $table->dateTime('tempo_limite')->nullable();
+            $table->unsignedBigInteger('id_user')->nullable();
             $table->string('user_hash', 255)->nullable();
-
-            $table->foreign('user_hash')->references(['hash', 'id_user'])->on('usuario');
             $table->timestamps();
         });
+
+        Schema::table('recuperar', function (Blueprint $table) {
+            $table->foreign(['id_user', 'user_hash'])->references(['id_user', 'hash'])->on('usuario');
+        });
+
     }
 
     /**
@@ -29,6 +32,7 @@ return new class extends Migration
      */
     public function down(): void
     {
+
         Schema::dropIfExists('recuperar');
     }
 };
