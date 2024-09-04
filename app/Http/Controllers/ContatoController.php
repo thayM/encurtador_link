@@ -13,6 +13,7 @@ class ContatoController extends Controller
             ['href' => 'site.login', 'descricao' => 'Login'],
             ['href' => 'site.register', 'descricao' => 'Registra-se']
         ];
+
         return view('site.contato', compact('menu'));
     }
 
@@ -30,8 +31,15 @@ $request->validate([
         $contato->nome = $request->input('nome');
         $contato->mensagem = $request->input('mensagem');
         $contato->motivo = $request->input('motivo');
-        $contato->save();
-        // $contato->create($request->all());
-        return redirect()->route('site.contato');
+
+        if($contato->motivo == "Selecione um motivo..."){
+            $msg = 'Campo motivo vazio, insira valor válido!';
+            return redirect()->route('site.contato')->with('msg', $msg)->with('contato', $contato);
+        }else{
+            $contato->save();
+            // $contato->create($request->all());
+            return redirect()->route('site.contato');
+        }
+
     }
 }
