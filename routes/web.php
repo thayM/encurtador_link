@@ -17,6 +17,8 @@ Route::get('/', [App\Http\Controllers\IndexController::class, 'index'])->name('s
 Route::get('/redirect', [App\Http\Controllers\IndexController::class, 'redirect'])->name('site.redirect');
 
 Route::get('/register', [App\Http\Controllers\AccountController::class, 'register'])->name('site.register');
+Route::post('/registerUser', [App\Http\Controllers\AccountController::class, 'registerUser'])->name('site.registerUser');
+
 Route::get('/recover', [App\Http\Controllers\AccountController::class, 'recover'])->name('site.recover');
 Route::get('/login', [App\Http\Controllers\AccountController::class, 'login'])->name('site.login');
 Route::get('/logout', [App\Http\Controllers\AccountController::class, 'logout'])->name('site.logout');
